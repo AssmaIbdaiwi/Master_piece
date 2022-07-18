@@ -1,8 +1,8 @@
 
 @extends('master')
 @section('content')
-
-
+{{-- #104f94 --}}
+{{-- #6a1543 --}}
         <!-- Carousel Start -->
         <div class="container-fluid p-0 mb-5">
             <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -13,7 +13,7 @@
                             <div class="p-3" style="max-width: 700px;margin-top:-50% ">
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Wasselny</h6>
                                 <h1 class="display-3 text-white mb-4 animated slideInDown">your safe destination</h1>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" style="background-color:#6a1543; border-color:#6a1543 ">Book now</a>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" style="background-color:#104f94; border-color:#104f94 ">Book now</a>
                                 {{-- <img src="images/arrow.gif" style="position: absolute;margin-left:29%;height:100%;display:block"> --}}
                       
                             </div>
@@ -25,7 +25,7 @@
                             <div  class="p-3" style="max-width: 700px;margin-top:-50% " >
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Wasselny</h6>
                                 <h1 class="display-3 text-white mb-4 animated slideInDown">your safe destination</h1>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" style="background-color:#6a1543; border-color:#6a1543 ">Book now  </a>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" style="background-color:#104f94; border-color:#104f94 ">Book now  </a>
        
           </div>
                         </div>
@@ -47,7 +47,7 @@
 
         <!-- Booking Start -->
                  <div class="section-title">
-         <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 48;position: absolute;margin-left:48%;height:100%;display:block;font-size:50px;color:#6a1543">keyboard_double_arrow_down </span> 
+         <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 48;position: absolute;margin-left:48%;height:100%;display:block;font-size:50px;color:#104f94">keyboard_double_arrow_down </span> 
          <br><br><br>  <h2>Book</h2>
            <div class="separator"></div>
       </div>
@@ -95,302 +95,20 @@
             </div>
         </div>
         <!-- Booking End -->
-<!--=================================
- welcome -->
-
-<section class="welcome-block objects-car page-section-ptb white-bg">
- <div class="objects-left left"><img class="img-fluid objects-1" src="images/objects/01.jpg" alt=""></div>
- <div class="objects-right right"><img class="img-fluid objects-2" src="images/objects/02.jpg" alt=""></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-         <div class="section-title">
-        
-           <h2>Dealeractive</h2>
-           <div class="separator"></div>
-           <p>Car Dealer is the best premium HTML5 Template. We provide everything you need to build an <strong>Amazing dealership website</strong>  developed especially for car sellers, dealers or auto motor retailers. You can use this template for creating website based on any framework and any language.</p> </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <div class="feature-box text-center">
-          <div class="icon">
-            <i class="glyph-icon flaticon-beetle"></i>
-          </div>
-          <div class="content">
-            <h6>All brands</h6>
-            <p>Galley simply dummy text lorem Ipsum is of the printin  k a of type and</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="feature-box text-center">
-          <div class="icon">
-            <i class="glyph-icon flaticon-interface-1"></i>
-          </div>
-          <div class="content">
-            <h6>Free Support</h6>
-            <p>Text of the printin lorem ipsum the is simply k a type text and galley of</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="feature-box text-center">
-          <div class="icon">
-            <i class="glyph-icon flaticon-key"></i>
-          </div>
-          <div class="content">
-            <h6>Dealership</h6>
-            <p>Printin k a of type and lorem Ipsum is simply dummy text of the galley </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="feature-box text-center">
-          <div class="icon">
-            <i class="glyph-icon flaticon-wallet"></i>
-          </div>
-          <div class="content">
-            <h6>affordable</h6>
-            <p>The printin k a galley Lorem Ipsum is type and simply dummy text of</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-       <div class="col-md-12">
-          <div class="halp-call text-center">
-            <img class="img-fluid" src="images/team/01.jpg" alt="">
-            <span>Have any question ?</span>
-            <h2 class="text-red">(007) 123 456 7890</h2>
-          </div>
-       </div>
-    </div>
-  </div>
-</section>
-
-<!--=================================
- welcome -->
-
-
-<!--=================================
- feature-car -->
-
-<section class="feature-car bg-2 bg-overlay-black-70 page-section-ptb">
-  <div class="container">
-   <div class="row">
-    <div class="col-md-12">
-      <div class="section-title">
-         <span class="text-white">Check out our recent cars</span>
-         <h2 class="text-white">Feature Car </h2>
-         <div class="separator"></div>
-      </div>
-    </div>
-   </div>
-   <div class="row">
-    <div class="col-md-12">
-     <div class="owl-carousel owl-theme" data-nav-arrow="true" data-items="4" data-md-items="4" data-sm-items="2" data-xs-items="1" data-space="20">
-      <div class="item">
-       <div class="car-item text-center">
-         <div class="car-image">
-           <img class="img-fluid" src="images/car/01.jpg" alt="">
-           <div class="car-overlay-banner">
-            <ul>
-              <li><a href="#"><i class="fa fa-link"></i></a></li>
-              <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
-             </ul>
-           </div>
-         </div>
-         <div class="car-list">
-           <ul class="list-inline">
-             <li><i class="fa fa-registered"></i> 2021</li>
-             <li><i class="fa fa-cog"></i> Manual </li>
-             <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
-           </ul>
-        </div>
-         <div class="car-content">
-          <div class="star">
-           <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star-o orange-color"></i>
-           </div>
-           <a href="#">Acura Rsx</a>
-           <div class="separator"></div>
-           <div class="price">
-             <span class="old-price">$35,568</span>
-             <span class="new-price">$32,698 </span>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="item">
-       <div class="car-item text-center">
-         <div class="car-image">
-           <img class="img-fluid" src="images/car/02.jpg" alt="">
-           <div class="car-overlay-banner">
-            <ul>
-              <li><a href="#"><i class="fa fa-link"></i></a></li>
-              <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
-             </ul>
-           </div>
-         </div>
-         <div class="car-list">
-           <ul class="list-inline">
-             <li><i class="fa fa-registered"></i> 2021</li>
-             <li><i class="fa fa-cog"></i> Manual </li>
-             <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
-           </ul>
-        </div>
-         <div class="car-content">
-          <div class="star">
-           <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star-o orange-color"></i>
-           </div>
-           <a href="#">Lexus GS 450h</a>
-           <div class="separator"></div>
-           <div class="price">
-             <span class="old-price">$35,568</span>
-             <span class="new-price">$32,698 </span>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="item">
-       <div class="car-item text-center">
-         <div class="car-image">
-           <img class="img-fluid" src="images/car/03.jpg" alt="">
-           <div class="car-overlay-banner">
-            <ul>
-              <li><a href="#"><i class="fa fa-link"></i></a></li>
-              <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
-             </ul>
-           </div>
-         </div>
-         <div class="car-list">
-           <ul class="list-inline">
-             <li><i class="fa fa-registered"></i> 2021</li>
-             <li><i class="fa fa-cog"></i> Manual </li>
-             <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
-           </ul>
-        </div>
-         <div class="car-content">
-          <div class="star">
-           <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star-o orange-color"></i>
-           </div>
-           <a href="#">GTA 5 Lowriders DLC</a>
-           <div class="separator"></div>
-           <div class="price">
-             <span class="old-price">$35,568</span>
-             <span class="new-price">$32,698 </span>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="item">
-       <div class="car-item text-center">
-         <div class="car-image">
-           <img class="img-fluid" src="images/car/04.jpg" alt="">
-           <div class="car-overlay-banner">
-            <ul>
-              <li><a href="#"><i class="fa fa-link"></i></a></li>
-              <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
-             </ul>
-           </div>
-         </div>
-         <div class="car-list">
-           <ul class="list-inline">
-             <li><i class="fa fa-registered"></i> 2021</li>
-             <li><i class="fa fa-cog"></i> Manual </li>
-             <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
-           </ul>
-        </div>
-         <div class="car-content">
-          <div class="star">
-           <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star-o orange-color"></i>
-           </div>
-           <a href="#">Toyota avalon hybrid </a>
-           <div class="separator"></div>
-           <div class="price">
-             <span class="old-price">$35,568</span>
-             <span class="new-price">$32,698 </span>
-           </div>
-         </div>
-       </div>
-      </div>
-      <div class="item">
-       <div class="car-item text-center">
-         <div class="car-image">
-           <img class="img-fluid" src="images/car/05.jpg" alt="">
-           <div class="car-overlay-banner">
-            <ul>
-              <li><a href="#"><i class="fa fa-link"></i></a></li>
-              <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
-             </ul>
-           </div>
-         </div>
-         <div class="car-list">
-           <ul class="list-inline">
-             <li><i class="fa fa-registered"></i> 2021</li>
-             <li><i class="fa fa-cog"></i> Manual </li>
-             <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
-           </ul>
-        </div>
-         <div class="car-content">
-          <div class="star">
-           <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star-o orange-color"></i>
-           </div>
-           <a href="#">Hyundai santa fe sport </a>
-           <div class="separator"></div>
-           <div class="price">
-             <span class="old-price">$35,568</span>
-             <span class="new-price">$32,698 </span>
-           </div>
-         </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </div>
-</section>
-
-<!--=================================
- feature-car -->
-
-
-
-
-
-        <!-- City Start -->
+       <!-- City Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6">
-                        <h1 class="mb-4">From the  <span class="text text-uppercase"style="color:#ffd322;">region,</span></h1>
-                        <h1 class="mb-4">to the  <span class="text text-uppercase" style="color:#ffd322;">region.</span></h1>
+                        <!-- <h6 class="section-title text-start text-primary text-uppercase">About Us</h6> -->
+                        <h1 class="mb-4">From the  <span class="text text-uppercase" style="color:#ffd322">region,</span></h1>
+                        <h1 class="mb-4">to the  <span class="text text-uppercase" style="color:#ffd322">region.</span></h1>
                         <p class="mb-4">Wasselny operates in most of the city in the Kingdom.</p>
                         <div class="row g-3 pb-4">
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="border rounded p-1">
                                     <div class="border rounded text-center p-4">
-                                        <i class="fa fa-hotel fa-2x text mb-2" style="color:#ffd322;"></i>
+                                        <i class="fa fa-hotel fa-2x text mb-2" style="color:#ffd322"></i>
                                         <h2 class="mb-1" data-toggle="counter-up">1234</h2>
                                         <p class="mb-0">Rooms</p>
                                     </div>
@@ -399,16 +117,16 @@
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
                                 <div class="border rounded p-1">
                                     <div class="border rounded text-center p-4">
-                                        <i class="fa fa-hotel fa-2x text mb-2" style="color:#ffd322;"></i>
+                                        <i class="fa fa-users-cog fa-2x text-mb-2" style="color:#ffd322"></i>
                                         <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="mb-0">Rooms</p>
+                                        <p class="mb-0">Staffs</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
                                 <div class="border rounded p-1">
                                     <div class="border rounded text-center p-4">
-                                        <i class="fa fa-users fa-2x text mb-2" style=" color:#ffd322;"></i>
+                                        <i class="fa fa-users fa-2x text mb-2" style="color:#ffd322"></i>
                                         <h2 class="mb-1" data-toggle="counter-up">1234</h2>
                                         <p class="mb-0">Clients</p>
                                     </div>
@@ -436,178 +154,249 @@
                 </div>
             </div>
         </div>
-        <!-- city End -->
+        <!-- About End -->
 
 
-<!--=================================
- play-video -->
-
- <section class="play-video popup-gallery">
-  <div class="play-video-bg bg-3 bg-overlay-black-70">
-   <div class="container">
-     <div class="row justify-content-center">
-       <div class="col-lg-8 col-md-12 text-center">
-         <h3 class="text-white">Want to know more about us? Play our promotional video now!</h3>
-       </div>
-     </div>
-    </div>
-   </div>
-   <div class="container">
-     <div class="row justify-content-center">
-       <div class="col-lg-10 col-md-12">
-         <div class="video-info text-center">
-           <img class="img-fluid center-block" src="images/car/24.jpg" alt="">
-           <a class="popup-youtube" href="https://www.youtube.com/watch?v=Xd0Ok-MkqoE"> <i class="fa fa-play"></i> </a>
-         </div>
-       </div>
-     </div>
-   </div>
- </section>
-
-<!--=================================
- play-video -->
-
-
-<!--=================================
- Counter -->
-
-<section class="counter counter-style-1 light page-section-ptb">
-  <div class="container">
-   <div class="row">
-     <div class="col-lg-3 col-sm-6 text-center">
-       <div class="counter-block">
-          <i class="glyph-icon flaticon-beetle"></i>
-          <h6 class="text-black">Vehicles In Stock  </h6>
-          <b class="timer" data-to="3968" data-speed="10000"></b>
-      </div>
-     </div>
-     <div class="col-lg-3 col-sm-6 text-center">
-      <div class="counter-block">
-         <i class="glyph-icon flaticon-interface"></i>
-          <h6 class="text-black">Dealer Reviews</h6>
-          <b class="timer" data-to="5568" data-speed="10000"></b>
-       </div>
-     </div>
-     <div class="col-lg-3 col-sm-6 text-center">
-      <div class="counter-block mb-4 mb-sm-0">
-          <i class="glyph-icon flaticon-circle"></i>
-          <h6 class="text-black">Happy Customer</h6>
-          <b class="timer" data-to="8908" data-speed="10000"></b>
-       </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 text-center">
-        <div class="counter-block mb-0">
-          <i class="glyph-icon flaticon-cup"></i>
-          <h6 class="text-black">Awards</h6>
-          <b class="timer" data-to="9968" data-speed="10000"></b>
-       </div>
-     </div>
-    </div>
-  </div>
-</section>
-
- <!--=================================
- Counter -->
-
-<hr class="gray">
-
- <!--=================================
- testimonial -->
-
-<section class="testimonial-1 white-bg page page-section-ptb">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="section-title">
-         <span>What Our Happy Clients say about us</span>
-         <h2>our Testimonial </h2>
-         <div class="separator"></div>
-      </div>
-      </div>
-    </div>
-   <div class="row">
-    <div class="col-md-12">
-     <div class="owl-carousel" data-items="3" data-md-items="3" data-sm-items="2" data-xs-items="1" data-space="20">
-      <div class="item">
-        <div class="testimonial-block text-center">
-           <div class="testimonial-image">
-             <img class="img-fluid" src="images/testimonial/01.jpg" alt="">
-           </div>
-           <div class="testimonial-box">
-             <div class="testimonial-avtar">
-               <img class="img-fluid" src="images/team/01.jpg" alt="">
-               <h6>Alice Williams</h6>
-               <span>Auto Dealer</span>
-             </div>
-             <div class="testimonial-content">
-                <p>It has survived not only five centuries. lorem Ipsum is simply dummy text of the printin a galley of type and bled it to make a type specimen book.</p>
-                <i class="fa fa-quote-right"></i>
-             </div>
-           </div>
+        <!-- woman start -->
+        <section class="section section-lg section-inset-1 bg-gray-1 pt-lg-0" style="margin-top: 7%;margin-bottom: 3%;">
+            <div class="container">
+              <div class="row row-50 justify-content-xl-between align-items-lg-center">
+                <div class="col-lg-6 wow fadeInLeft">
+                  <div class="box-image"><img class="box-image-position" src="https://cdn.motor1.com/images/mgl/EBkx3/s1/young-woman-driving-her-car.jpg" alt="" width="500" height="391"/>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-5 wow fadeInRight">
+               <center>  <h1 class="mb-4">For your</span></h1>
+                    <h1 class="mb-4">  <span class="text-primary text-uppercase"> convenience.</span></h1></center>   
+                    <p class="mb-4">Wasselny provides  for women, woman driver for just women passengers.</p>
+                   <center><a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a></center> 
+                </div>
+               
+              </div>
+            </div>
+          </section>
+<!--  end women -->
+        <!-- Video Start -->
+        <div class="container-xxl py-5 px-0 wow zoomIn" data-wow-delay="0.1s">
+            <div class="row g-0">
+                <div class="col-md-6 bg-dark d-flex align-items-center">
+                    <div class="p-5">
+                        <h6 class="section-title text-start text-white text-uppercase mb-3">Luxury Living</h6>
+                        <h1 class="text-white mb-4">Discover A Brand Luxurious Hotel</h1>
+                        <p class="text-white mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Our Rooms</a>
+                 
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="video">
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://youtu.be/2fFoSHRFXKo" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-     <div class="item">
-        <div class="testimonial-block text-center">
-           <div class="testimonial-image">
-             <img class="img-fluid" src="images/testimonial/02.jpg" alt="">
-           </div>
-           <div class="testimonial-box">
-             <div class="testimonial-avtar">
-               <img class="img-fluid" src="images/team/02.jpg" alt="">
-               <h6>Michael Bean</h6>
-               <span>Car Dealer</span>
-             </div>
-             <div class="testimonial-content">
-                <p>A galley of type and bled it to make a type specimen book. Ipsum is simply dummy text of the printin It has survived not only five centuries.</p>
-                <i class="fa fa-quote-right"></i>
-             </div>
-           </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="testimonial-block text-center">
-           <div class="testimonial-image">
-             <img class="img-fluid" src="images/testimonial/03.jpg" alt="">
-           </div>
-           <div class="testimonial-box">
-             <div class="testimonial-avtar">
-               <img class="img-fluid" src="images/team/03.jpg" alt="">
-               <h6>Felica Queen</h6>
-               <span>Auto Dealer</span>
-             </div>
-             <div class="testimonial-content">
-                <p>Text of the printin a galley of type and bled it to a type specimen book. It has survived not only five centuries make Lorem Ipsum is simply dummy.</p>
-                <i class="fa fa-quote-right"></i>
-             </div>
-           </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="testimonial-block text-center">
-           <div class="testimonial-image">
-             <img class="img-fluid" src="images/testimonial/04.jpg" alt="">
-           </div>
-           <div class="testimonial-box">
-             <div class="testimonial-avtar">
-               <img class="img-fluid" src="images/team/04.jpg" alt="">
-               <h6>Sara Lisbon</h6>
-               <span>Customer</span>
-             </div>
-             <div class="testimonial-content">
-                <p>Printin a galley of type and bled It has survived not lorem Ipsum is simply dummy text of the  it to make a type specimen book only five centuries.</p>
-                <i class="fa fa-quote-right"></i>
-             </div>
-           </div>
-        </div>
-      </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
 
- <!--=================================
- testimonial -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video Start -->
+        
+        <!-- Room Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title text-center text-primary text-uppercase">Our Rooms</h6>
+                    <h1 class="mb-5">Be a part of our<span class="text-primary text-uppercase"> family</span></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-md-10 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="https://cdn2.atraccion360.com/media/aa/styles/xlarge/public/images/2019/05/chofer01.jpg" style="height: 500px;" alt="">
+                                <!-- <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small> -->
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Become a driver</h5>
 
+                                </div>
+
+                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Sign up</a>
+                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md- wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="https://www.acorninsure.co.uk/wp-content/uploads/2021/04/Fast-Food-Delivery-Driver-resize-1080x675.jpg" style="height: 500px;" alt="">
+                                <!-- <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small> -->
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Become a partner</h5>
+
+                                </div>
+
+                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Contact us</a>
+                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Room End -->
+
+
+        <!-- Service Start -->
+        <!-- <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title text-center text-primary text-uppercase">Our Services</h6>
+                    <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-hotel fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Rooms & Appartment</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-utensils fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Food & Restaurant</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-spa fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Spa & Fitness</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-swimmer fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Sports & Gaming</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-glass-cheers fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Event & Party</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-dumbbell fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">GYM & Yoga</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Service End -->
+
+
+        <!-- Testimonial Start -->
+       
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title text-center text-primary text-uppercase">Feedback</h6>
+            <h1 class="mb-5">Be a part of our<span class="text-primary text-uppercase"> family</span></h1>
+        </div>
+        <div class="container-xxl testimonial my-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s">
+            
+            <div class="container">
+                <div class="owl-carousel testimonial-carousel py-5">
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                    </div>
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                    </div>
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
 
 @endsection
