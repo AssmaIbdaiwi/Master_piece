@@ -54,7 +54,7 @@
        <div class="contact-box text-center grey-border mb-4 mb-sm-0">
           <i class="material-icons">&#xe0be;</i>
           <h5>Email</h5>
-          <p> wasselnyt@website.com</p>
+          <p> wasselny@website.com</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 col-sm-6">
@@ -103,9 +103,25 @@
           </div>
            </div>
        
+<div class="col-lg-4 col-sm-12 mt-lg-0 mt-4">
 
+<div class="container-fluid">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13469.364378603499!2d35.587065230994725!3d32.43680359721494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c6044d63a541b%3A0x9e46de4bdab18d8c!2sTabqet%20Fahel!5e0!3m2!1sen!2sjo!4v1660765466277!5m2!1sen!2sjo"
+    width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+ 
+</div>
+</div>
      </div>
      </div>
+
+
+{{-- <section class="contact-map">
+  
+</section> --}}
+
  </div>
   </div>
 </section>
@@ -115,14 +131,7 @@
 <!--=================================
  contact-map -->
 
- <section class="contact-map">
-  <div class="container-fluid">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13469.364378603499!2d35.587065230994725!3d32.43680359721494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c6044d63a541b%3A0x9e46de4bdab18d8c!2sTabqet%20Fahel!5e0!3m2!1sen!2sjo!4v1660765466277!5m2!1sen!2sjo"
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
- </section>
+
 
 <!--=================================
  contact-map -->

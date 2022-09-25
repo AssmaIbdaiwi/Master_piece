@@ -15,25 +15,72 @@ class CarListController extends Controller
      */
     public function index(Request $request)
     {
-        // if(isset($request->search)){
-            //  $car =Trip::join('reg_drivers','reg_drivers.user_driver_id','=','trips.trip_driver_id')->where('location_from','LIKE', "%{$request->location_from}%")->orWhere('location_to','LIKE', "%{$request->location_to}%")->orWhere('passengers_numbers','LIKE', "%{$request->passengers_numbers}%")->orWhere('booking_luggages','LIKE', "%{$request->booking_luggages}%")->get();
-        // }
-        // else{ 
-            // $car =Trip::join('reg_drivers','reg_drivers.user_driver_id','=','trips.trip_driver_id')->get('*');
-        // }
- $search = $request->input('search');
-
- // Search in the title and body columns from the posts table
- $car= Trip::join('reg_drivers','reg_drivers.user_driver_id','=','trips.trip_driver_id')
- ->where('trips.location_from', 'LIKE', '%' . $request-> location_from . '%')
- ->where('trips.location_to', 'LIKE', '%' . $request-> location_to . '%')
-  ->where('trips.passengers_numbers', 'LIKE','%' . $request-> passengers_numbers . '%')
-   ->where('trips.booking_luggages', 'LIKE', '%' . $request-> booking_luggages . '%')
- ->get();
 
 
 
-      return view('cars', compact('car'));
+
+        // *******************************************************
+
+        $LocationFrom = $request->input('location_from');
+
+        $LocationTo = $request->input('location_to');
+
+        $PassengerNumber = $request->input('passengers_numbers');
+
+
+        $booking_luggages = $request->input('booking_luggages');
+
+
+
+        $car = Trip::join('reg_drivers', 'reg_drivers.user_driver_id', '=',
+            'trips.trip_driver_id'
+        )->get(['*']);
+
+
+
+
+        if ($LocationFrom != null & $LocationTo != null & $PassengerNumber != null & $booking_luggages != null) {
+            $car = Trip::join('reg_drivers', 'reg_drivers.user_driver_id', '=', 'trips.trip_driver_id')
+                ->where('trips.location_from', '=', $LocationFrom)
+                ->where('trips.location_to', '=', $LocationTo)
+                ->where('trips.passengers_numbers', '=', $PassengerNumber)
+                ->where('trips.booking_luggages', '=', $booking_luggages)
+                ->get(['*']);
+        } else if ($LocationFrom != null & $LocationTo != null & $PassengerNumber != null) {
+            $car = Trip::join('reg_drivers', 'reg_drivers.user_driver_id', '=', 'trips.trip_driver_id')
+                ->where('trips.location_from', '=', $LocationFrom)
+                ->where('trips.location_to', '=', $LocationTo)
+                ->where('trips.passengers_numbers', '=', $PassengerNumber)
+                // ->where('trips.booking_luggages', '=', $booking_luggages)
+                ->get(['*']);
+        } else if ($LocationFrom != null & $LocationTo != null) {
+            $car = Trip::join('reg_drivers', 'reg_drivers.user_driver_id', '=', 'trips.trip_driver_id')
+                ->where('trips.location_from', '=', $LocationFrom)
+                ->where('trips.location_to', '=', $LocationTo)
+                // ->where('trips.passengers_numbers', '=', $PassengerNumber)
+                // ->where('trips.booking_luggages', '=', $booking_luggages)
+                ->get(['*']);
+        } else if ($LocationFrom != null) {
+            $car = Trip::join('reg_drivers', 'reg_drivers.user_driver_id', '=', 'trips.trip_driver_id')
+                ->where('trips.location_from', '=', $LocationFrom)
+                // ->where('trips.location_to', '=', $LocationTo)
+                // ->where('trips.passengers_numbers', '=', $PassengerNumber)
+                // ->where('trips.booking_luggages', '=', $booking_luggages)
+                ->get(['*']);
+        } else if ($LocationTo != null) {
+            $car = Trip::join('reg_drivers', 'reg_drivers.user_driver_id', '=', 'trips.trip_driver_id')
+                // ->where('trips.location_from', '=', $LocationFrom)
+                ->where('trips.location_to', '=', $LocationTo)
+                // ->where('trips.passengers_numbers', '=', $PassengerNumber)
+                // ->where('trips.booking_luggages', '=', $booking_luggages)
+                ->get(['*']);
+        }else {
+            $car = Trip::join('reg_drivers', 'reg_drivers.user_driver_id', '=', 'trips.trip_driver_id')->get(['*']);
+        }
+
+
+
+        return view('cars', compact('car'));
     }
 
     /**

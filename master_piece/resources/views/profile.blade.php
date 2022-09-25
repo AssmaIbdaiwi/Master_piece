@@ -26,11 +26,11 @@
 						href="#account-general">General</a>
 					<a class="list-group-item list-group-item-action" data-toggle="list" href="/profile">Profile
 						informations</a>
-
-					<a class="list-group-item list-group-item-action" data-toggle="list" href="/drivercar-info">Car
+<a class="list-group-item list-group-item-action" data-toggle="list" href="/review">Add Review</a>
+				@if(Auth::user()->rule == 1)	<a class="list-group-item list-group-item-action" data-toggle="list" href="/drivercar-info">Car
 						informations</a>
 					<a class="list-group-item list-group-item-action" data-toggle="list"
-						href="/tripadd">Trip add</a>
+						href="/tripadd">Trip add</a> @endif
 					{{-- <a class="list-group-item list-group-item-action" data-toggle="list"
 						href="#account-notifications">Notifications</a> --}}
 				</div>

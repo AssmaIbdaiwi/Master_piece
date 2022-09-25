@@ -13,7 +13,7 @@ class DashboardMessageController extends Controller
        $user=Contact::all();
 
 
-        return view('dashboard.dashboardMessage',compact('user'))  ->with(request()->input('page'));   ;
+        return view('dashboard.dashboardMessage',compact('user'))  ->with(request()->input('page'));   
     }
 
     /**

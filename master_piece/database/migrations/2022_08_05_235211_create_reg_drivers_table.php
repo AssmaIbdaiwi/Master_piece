@@ -16,8 +16,8 @@ class CreateRegDriversTable extends Migration
         Schema::create('reg_drivers', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('user_driver_id')->unique();
-            $table->string('driver_fname');
-            $table->string('driver_lname');
+            $table->string('driver_fname')->nullable();
+            $table->string('driver_lname')->nullable();
             $table->string('driver_email')->unique();
             $table->string('driver_mobile')->nullable();
             $table->string('rule')->nullable();

@@ -5,7 +5,8 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use App\Models\RegDriver;
 use Illuminate\Http\Request;
-
+use RealRashid\SweetAlert\Facades\Alert;
+// use Alert;
 class RegDriverController extends Controller
 {
     /**
@@ -62,7 +63,7 @@ class RegDriverController extends Controller
          {
              $file = $request->file('id_card');
              $extention = $file->getClientOriginalExtension();
-             $filename = time().'.'.$extention;
+             $filename = date('lHi').'.'.$extention;
              $file->move('upload', $filename);
              $driver ->id_card = $filename;
          }
@@ -70,7 +71,7 @@ class RegDriverController extends Controller
          {
              $file = $request->file('license');
              $extention = $file->getClientOriginalExtension();
-             $filename = time().'.'.$extention;
+             $filename = date('YmHi').'.'.$extention;
              $file->move('upload', $filename);
              $driver ->license = $filename;
          }
@@ -78,7 +79,7 @@ class RegDriverController extends Controller
          {
              $file = $request->file('car_image');
              $extention = $file->getClientOriginalExtension();
-             $filename = time().'.'.$extention;
+             $filename = date('YmdHi').'.'.$extention;
              $file->move('upload', $filename);
              $driver ->car_image = $filename;
          }
@@ -93,7 +94,7 @@ $driver->driver_email = Auth::user()->email;
 $driver->driver_address = $request->driver_address;
 $driver->driver_mobile = $request->driver_mobile;
 $driver->gender = $request->gender;
-
+$driver->rule = 0;
 
 $driver->car_model= $request->car_model;
 $driver->car_description  = $request->car_description;
@@ -102,9 +103,16 @@ $driver-> car_color = $request->car_color;
 
 
 $driver->save();
+// Alert::toast('You\'ve Successfully Registered', 'success');
+// Alert::success('Congrats', 'You\'ve Successfully Registered');
+// toast('Your Post as been submited!','success');
+ alert()->success('Register successfully','You are now a driver.');
+return redirect()->route('driver-register.store');
+// ->with ('success.','You are now a driver.')
 
-return redirect()->route('driver-register.store')
-->with('success','You are now a driver.');
+;
+
+
     }
 
     /**

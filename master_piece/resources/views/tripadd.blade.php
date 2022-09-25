@@ -26,7 +26,7 @@
                         href="#account-general">General</a>
                     <a class="list-group-item list-group-item-action" data-toggle="list" href="/profile">Profile
                         informations</a>
-
+<a class="list-group-item list-group-item-action" data-toggle="list" href="/review">Add Review</a>
                     <a class="list-group-item list-group-item-action" data-toggle="list" href="/drivercar-info">Car
                         informations</a>
                     <a class="list-group-item list-group-item-action" data-toggle="list"
@@ -64,7 +64,7 @@
                         <select class="form-control" name="location_from">
                             <option disabled selected hidden> From...</option>
                             <option value="Tabeqet_Fahel">Tabeqet Fahel</option>
-                            <option value="Tabeqet_Fahel">Masharee</option>
+                            <option value="Masharee">Masharee</option>
                             <option value="Wade_AlRayan">Wade AlRayan</option>
                         </select>
                                 </div>
@@ -78,7 +78,7 @@
                                 </div>
                                 <div class="form-group">
                                 <label class="form-label">Trip date*</label>
-                                    <input class="form-control" type="date" placeholder="Date" name="booking_date">
+                                    <input class="form-control" type="date" placeholder="Date"  name="booking_date">
                           
                                 </div>
                                 <div class="form-group">
@@ -88,7 +88,7 @@
 
                                 <div class="form-group">
                                    <label class="form-label">Trip price JD* </label>
-                                    <input class="form-control" type="number" placeholder="price" name="trip_price" min="1">
+                                    <input class="form-control" type="text" placeholder="price" name="trip_price" >
                                 </div>
 
 <div class="form-group">

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Review;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class ReviewController extends Controller
@@ -14,7 +16,9 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        //
+
+        return view('review')->with(request()->input('page'));  
+
     }
 
     /**
@@ -24,7 +28,7 @@ class ReviewController extends Controller
      */
     public function create()
     {
-        //
+        return view('review');
     }
 
     /**
@@ -35,7 +39,12 @@ class ReviewController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $message = new Review();
+        $message->user_id = Auth::user()->id;
+        $message->msg_feedback = $request->msg_feedback;
+        $message->save();
+        return redirect()->route('review.store')
+        ->with('success', 'Review has been Added successfully.');
     }
 
     /**

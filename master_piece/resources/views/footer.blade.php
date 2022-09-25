@@ -5,78 +5,47 @@
   <div class="container">
 
     <div class="row">
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-5 col-md-6">
         <div class="about-content">
           <img class="img-fluid" id="logo-footer" src="images/logo.png" alt="">
-          <p>We provide everything you need to build an amazing dealership website developed especially for car sellers dealers or auto motor retailers.</p>
+          <p>We provide the best service for your destination.</p>
         </div>
         <div class="address">
           <ul>
-            <li> <i class="fa fa-map-marker"></i><span>220E Front St. Burlington NC 27215</span> </li>
-            <li> <i class="fa fa-phone"></i><span>(007) 123 456 7890</span> </li>
-            <li> <i class="fa fa-envelope-o"></i><span>support@website.com</span> </li>
+            <li> <i class="fa fa-map-marker"></i><span>Irbid, Jordan</span> </li>
+            <li> <i class="fa fa-phone"></i><span>(077) 123 4560 </span> </li>
+            <li><iconify-icon  icon="clarity:email-solid"></iconify-icon><span>wasselny@website.com</span> </li>
           </ul>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6">
+
+
+
+
+      <div class="col-lg-4 col-md-6">
         <div class="usefull-link">
         <h6 class="text-white">Useful Links</h6>
           <ul>
-            <li><a href="#"><i class="fa fa-angle-double-right"></i> Change Oil and Filter</a></li>
-            <li><a href="#"><i class="fa fa-angle-double-right"></i> Brake Pads Replacement</a></li>
-            <li><a href="#"><i class="fa fa-angle-double-right"></i> Timing Belt Replacement</a></li>
-            <li><a href="#"><i class="fa fa-angle-double-right"></i> Pre-purchase Car Inspection</a></li>
-            <li><a href="#"><i class="fa fa-angle-double-right"></i> Starter Replacement</a></li>
+            <li><a href="/"><i class="fa fa-angle-double-right"></i> Home</a></li>
+            <li><a href="/cars"><i class="fa fa-angle-double-right"></i> Trips</a></li>
+            <li><a href="partner"><i class="fa fa-angle-double-right"></i> Register for be a partner</a></li>
+            <li><a href="about"><i class="fa fa-angle-double-right"></i> About</a></li>
+            <li><a href="contact"><i class="fa fa-angle-double-right"></i> Contact us</a></li>
+           
           </ul>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6">
-       <div class="recent-post-block">
-        <h6 class="text-white">recent posts </h6>
-          <div class="recent-post">
-            <div class="recent-post-image">
-              <img class="img-fluid" src="images/car/01.jpg" alt="">
-            </div>
-            <div class="recent-post-info">
-                <a href="#">Time to change your </a>
-                <span class="post-date"><i class="fa fa-calendar"></i>September 10, 2021</span>
-            </div>
-         </div>
-         <div class="recent-post">
-            <div class="recent-post-image">
-              <img class="img-fluid" src="images/car/02.jpg" alt="">
-            </div>
-            <div class="recent-post-info">
-                <a href="#">The best time to </a>
-                <span class="post-date"><i class="fa fa-calendar"></i>September 10, 2021</span>
-            </div>
-         </div>
-         <div class="recent-post">
-            <div class="recent-post-image">
-              <img class="img-fluid" src="images/car/03.jpg" alt="">
-            </div>
-            <div class="recent-post-info">
-                <a href="#">Replacing a timing </a>
-                <span class="post-date"><i class="fa fa-calendar"></i>September 10, 2021</span>
-            </div>
-         </div>
-       </div>
-      </div>
+
+      
       <div class="col-lg-3 col-md-6">
         <div class="news-letter">
         <h6 class="text-white">subscribe Our Newsletter </h6>
-         <p>Keep up on our always evolving products features and technology. Enter your e-mail and subscribe to our newsletter.</p>
-         <form class="news-letter">
-           <input type="email" placeholder="Enter your Email" class="form-control placeholder">
-           <a class="button red" href="#">Subscribe</a>
-         </form>
+         <p>Follow us.</p>
           <div style="padding:2%">     
-          <a class="facebook" href="#" style="padding:2%">  <i class="fa fa-facebook"></i> </a>
-          <a class="twitter" href="#" style="padding:2%">  <i class="fa fa-twitter"></i> </a>
-          <a class="pinterest" href="#" style="padding:2%"> <i class="fa fa-pinterest-p"></i> </a>
-          <a class="dribbble" href="#" style="padding:2%"> <i class="fa fa-dribbble"></i> </a>
-         <a class="google-plus" href="#" style="padding:2%"> <i class="fa fa-google-plus"></i> </a>
-          <a class="behance" href="#" style="padding:2%"> <i class="fa fa-behance"></i> </a>
+          <a class="facebook" href="#" style="padding:2%">  <iconify-icon icon="ant-design:facebook-filled" width="30" height="30"></iconify-icon> </a>
+          <a class="twitter" href="#" style="padding:2%">  <iconify-icon icon="ant-design:twitter-square-filled" width="30" height="30"></iconify-icon> </a>
+          <a class="pinterest" href="#" style="padding:2%"> <iconify-icon icon="fa-brands:pinterest-square" width="30" height="30"></iconify-icon> </a>
+         <a class="google-plus" href="#" style="padding:2%"> <iconify-icon icon="ant-design:google-plus-square-filled" width="30" height="30"></iconify-icon> </a>
        </div>
         </div>
       </div>
@@ -89,14 +58,14 @@
      <div class="row">
       <div class="col-lg-6 col-md-12">
        <div class="text-lg-start text-center">
-        <p>©Copyright 2021 Car Dealer Developed by <a href="http://www.potenzaglobalsolutions.com/" target="_blank">Potenzaglobalsolutions</a></p>
+        <p>©Copyright 2022 Wasselny by <a href="#" target="_blank">Assma</a></p>
        </div>
       </div>
       <div class="col-lg-6 col-md-12">
         <ul class="list-inline text-lg-end text-center">
-          <li><a href="#">privacy policy </a> | </li>
+          <li><a href="/privacypolicy">privacy policy </a> | </li>
           <li><a href="#">terms and conditions </a> |</li>
-          <li><a href="#">contact us </a></li>
+         
         </ul>
       </div>
      </div>

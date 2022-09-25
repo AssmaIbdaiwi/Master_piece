@@ -119,6 +119,7 @@ User::where('id',$id)->update([
             'password' => $request->password,
             'mobile' => $request->mobile,
             'address' => $request->address,
+             'rule' => $request->rule,
 'image' =>$user ->image 
  ]);
 

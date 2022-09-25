@@ -4,15 +4,16 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Car;
+use App\Models\RegDriver;
 use Illuminate\Http\Request;
 
 class DashboardCarController extends Controller
 {
     public function index()
     {
-       $driver=User::join('cars','cars.driver_id','=','users.id')->get('*');
-
-        $car=Car::all();
+    //    $driver=User::join('cars','cars.driver_id','=','users.id')->get('*');
+ $driver=User::all();
+        $car=RegDriver::all();
 // dd($car);
         return view('dashboard.dashboardCar',compact('car','driver'))  ->with(request()->input('page'));   ;
     }
@@ -27,7 +28,7 @@ class DashboardCarController extends Controller
 // $driver=User::join('cars','cars.driver_id','=','users.id')->get('*');
 
 $driver=User::all();
-     $car=Car::all();
+     $car=RegDriver::all();
       
       return view('dashboard.addCar',compact('car','driver'));
     }
@@ -41,8 +42,17 @@ $driver=User::all();
     public function store(Request $request)
     {
  
-$car = new Car();
-$car ->driver_id=$request->driver_id;
+$car = new RegDriver();
+$car ->user_driver_id=$request->user_driver_id;
+// $car ->user_driver_id= null;
+// $car ->driver_fname =Auth::user()->name ;
+$car ->driver_fname=$request->driver_fname;
+$car ->driver_lname=$request->driver_lname;
+$car->driver_email = $request->driver_email;
+$car->driver_address = $request->driver_address;
+$car->driver_mobile = $request->driver_mobile;
+$car->gender = $request->gender;
+$car->rule = $request->rule;
 $car ->car_model = $request->car_model;
 $car ->car_description = $request->car_description;
 $car ->car_number = $request->car_number;
@@ -58,6 +68,22 @@ $car ->car_color = $request->car_color;
          }
 
 $car->save();
+
+
+// $cars = new User();
+// $cars ->name=$request->driver_fname;
+// $cars ->lname=$request->driver_lname;
+// $cars->email = $request->driver_email;
+// $cars->address = $request->driver_address;
+// $cars->mobile = $request->driver_mobile;
+// $cars->password = 123;
+// $cars->rule = $request->rule;
+// $cars->save();
+
+
+
+
+
 return redirect()->route('dashboardCar.store')
 ->with('success','Your car information has been added.');
 
@@ -73,7 +99,10 @@ return redirect()->route('dashboardCar.store')
      */
     public function show($id)
     {
-        //
+    //   $driver=User::all();
+    //  $car=RegDriver::all();
+      
+    //   return view('dashboard.addCar',compact('car','driver'));
     }
 
     /**
@@ -85,7 +114,7 @@ return redirect()->route('dashboardCar.store')
     public function edit($id)
     {
         $driver=User::all();
-        $car = Car::where('id', $id)->first();
+        $car = RegDriver::where('id', $id)->first();
         return view('dashboard.editCar',compact('car','driver'));
     }
 
@@ -98,7 +127,7 @@ return redirect()->route('dashboardCar.store')
      */
     public function update(Request $request, $id)
     {
-$car = new Car();
+$car = new RegDriver();
         
          if($request->hasfile('car_image'))
          {
@@ -109,14 +138,23 @@ $car = new Car();
              $car ->car_image = $filename;
          }
 
- Car::where('id',$id)->update([
+ RegDriver::where('id',$id)->update([
 
-'driver_id'=>$request->driver_id,
+'driver_fname' =>$request->driver_fname,
+'driver_lname'=>$request->driver_lname,
+'driver_email' => $request->driver_email,
+'driver_address' => $request->driver_address,
+'driver_mobile' => $request->driver_mobile,
+'gender' => $request->gender,
+'rule' => $request->rule,
+
+'user_driver_id'=>$request->user_driver_id,
 'car_model'=>$request->car_model,
 'car_description'=>$request->car_description,
 'car_number'=> $request->car_number,
 'car_color' => $request->car_color,
 'car_image' =>$car ->car_image 
+
  ]);
 
 
@@ -134,7 +172,7 @@ return redirect()->route('dashboardCar.index')
     public function destroy($id)
     {  
         
-        $delete = Car::find($id);
+        $delete = RegDriver::find($id);
         $delete->delete();
         return redirect()->route('dashboardCar.index')
                         ->with('success','car deleted successfully');

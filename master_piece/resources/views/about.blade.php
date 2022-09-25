@@ -36,7 +36,9 @@
            <span>Welcome to </span>
            <h2>Wasselny</h2>
            <div class="separator"></div>
-           <p>Wasselny is the best premium HTML5 Template. We provide everything you need to build an <strong>Amazing dealership website</strong>  developed especially for car sellers, dealers or auto motor retailers. You can use this template for creating website based on any framework language.</p>
+           <p>The origin of Wasselny is an Arabic word meaning "give me a lift". It is a name of service that startup in Jordan and
+          its philosophy is quite simple to be good to captains (often knows as drivers), users and colleagues while cooperating
+          with the regulatory authorities.</p>
          </div>
       </div>
     </div>
@@ -55,10 +57,16 @@
         </div>
       </div>
       <div class="col-md-6">
-        <p>Dealer obcaecati adipisci vero lorem ipsum dolor sit amet, consectetur adipisicing elit. dolorum pariatur aut consectetur. Sit quisquam rerum corporis neque atque inventore nulla, quibusdam, ipsa suscipit aperiam reiciendis, ea odio?</p>
+        <p>The Wasselny website provides a digital network that functions as a marketplace where persons (“Users”) who seek
+        personal transportation services, the delivery of goods, products, medicines, restaurant meals, e-payment solutions,
+        and/or logistics services (“Services”) can be matched with persons, including drivers (“Captains”) or third party
+        companies (“Merchant Partners”) who can provide the Services. </p>
         <br />
-        <p>Adipisicing ipsum dolor sit amet, consectetur elit. Obcaecati adipisci vero dolorum pariatur aut consectetur. Sit quisquam rerum corporis neque atque inventore nulla, quibusdam, ipsa suscipit aperiam reiciendis, ea odio?</p>
-        <p>Obcaecati adipisci vero dolorum pariatur aut consectetur. lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quisquam rerum corporis neque atque inventore nulla, quibusdam, ipsa suscipit aperiam reiciendis, ea odio?</p>
+        <p>Each User shall create a User account that enables access
+        to the Wasselny Platform. Any decision by a User to make use of or accept Services is a decision made in such User’s
+        sole discretion.</p>
+        <p>With respect to restaurant meals, Wasselny is a business where the food is prepared and provided by independent
+        restaurants (our " Restaurant Partners") and delivered by Captains.</p>
       </div>
     </div>
 
@@ -73,7 +81,7 @@
 <!--=================================
 our History -->
 
-<section class="our-history white-bg page-section-ptb">
+{{-- <section class="our-history white-bg page-section-ptb">
   <div class="container">
    <div class="row">
     <div class="col-md-12">
@@ -136,7 +144,7 @@ our History -->
     </div>
    </div>
   </div>
-</section>
+</section> --}}
 
 <!--=================================
 our History-->
@@ -154,46 +162,46 @@ our History-->
           <span>Welcome to our website</span>
           <h2>Our service</h2>
           <div class="separator"></div>
-          <p>Wasselny is the best premium HTML5 Template. We provide everything you need to build an <strong>Amazing
+          {{-- <p>Wasselny is the best premium HTML5 Template. We provide everything you need to build an <strong>Amazing
               dealership website</strong> developed especially for car sellers, dealers or auto motor retailers. You can
-            use this template for creating website based on any framework and any language.</p>
+            use this template for creating website based on any framework and any language.</p> --}}
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-3 col-sm-6">
+      <div class="col-lg-4 col-sm-6">
         <div class="feature-box text-center">
           <div class="icon">
             <i class="glyph-icon flaticon-beetle"></i>
           </div>
           <div class="content">
-            <h6>All brands</h6>
-            <p>Lorem Ipsum is simply dummy text of the printin k a galley of type and</p>
+            <h6>Safety</h6>
+            {{-- <p>Lorem Ipsum is simply dummy text of the printin k a galley of type and</p> --}}
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-sm-6">
+      <div class="col-lg-4 col-sm-6">
         <div class="feature-box text-center">
           <div class="icon">
             <i class="glyph-icon flaticon-interface-1"></i>
           </div>
           <div class="content">
             <h6>Free Support</h6>
-            <p>Lorem Ipsum is simply dummy text of the printin k a galley of type and</p>
+            {{-- <p>Lorem Ipsum is simply dummy text of the printin k a galley of type and</p> --}}
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-sm-6">
+      {{-- <div class="col-lg-3 col-sm-6">
         <div class="feature-box text-center">
           <div class="icon">
             <i class="glyph-icon flaticon-key"></i>
           </div>
           <div class="content">
-            <h6>Dealership</h6>
+            <h6></h6>
             <p>Lorem Ipsum is simply dummy text of the printin k a galley of type and</p>
           </div>
         </div>
-      </div>
+      </div> --}}
       <div class="col-lg-3 col-sm-6">
         <div class="feature-box text-center">
           <div class="icon">
@@ -201,12 +209,12 @@ our History-->
           </div>
           <div class="content">
             <h6>AFFORDABLE</h6>
-            <p>Lorem Ipsum is simply dummy text of the printin k a galley of type and</p>
+            {{-- <p>Lorem Ipsum is simply dummy text of the printin k a galley of type and</p> --}}
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
+    {{-- <div class="row">
       <div class="col-lg-3 col-sm-6">
         <div class="feature-box text-center">
           <div class="icon">
@@ -250,14 +258,14 @@ our History-->
             <p>Magni quidem aliquid illo sequi similique minima corporis fugiat type </p>
           </div>
         </div>
-      </div>
+      </div> --}}
     </div>
     <div class="row">
       <div class="col-md-12">
         <div class="halp-call text-center">
-          <img class="img-fluid" src="images/team/01.jpg" alt="">
+          <img class="img-fluid" src="images/myphoto.png" alt="">
           <span>Have a any question ?</span>
-          <h2 class="text-red">(007) 123 456 7890</h2>
+          <h2 class="text-red">(077) 123 4567 </h2>
         </div>
       </div>
     </div>
@@ -278,7 +286,7 @@ Counter -->
         <div class="counter-block text-start mb-lg-0 mb-4">
           <div class="separator"></div>
           <div class="info">
-            <h6 class="text-white">Vehicles in Stock</h6>
+            <h6 class="text-white">Drivers</h6>
             <i class="glyph-icon flaticon-beetle"></i>
             <b class="timer text-white" data-to="561" data-speed="10000"></b>
           </div>
@@ -288,7 +296,7 @@ Counter -->
         <div class="counter-block text-start mb-lg-0 mb-4">
           <div class="separator"></div>
           <div class="info">
-            <h6 class="text-white">Dealer Reviews</h6>
+            <h6 class="text-white">Reviews</h6>
             <i class="glyph-icon flaticon-interface"></i>
             <b class="timer text-white" data-to="856" data-speed="10000"></b>
           </div>
@@ -333,17 +341,19 @@ custom-block -->
           <h3>Wasselny</h3>
         </div>
         <div class="content">
-          <h2 class="text-red">10</h2>
-          <strong>Everything you need to build an amazing dealership automotive responsive website.</strong>
-          <p>Wasselny is the best premium HTML5 Template. We provide everything you need to build an <b>Amazing
-              dealership website</b> developed especially for car sellers, dealers or auto motor retailers.</p>
+          {{-- <h2 class="text-red">10</h2> --}}
+          {{-- <strong>Everything you need to build an amazing dealership automotive responsive website.</strong> --}}
+          <p>With respect to goods or services which you can order through the Wasselny website, or where Wasselny is supporting your
+          payment to a third-party merchant who is not present on the Wasselny website but which services or goods are provided by
+          Merchant Partners, these goods or services are prepared, undertaken and provided by the relevant independent Merchant
+          Partner.</p>
         </div>
       </div>
       <div class="col-md-6">
         <img class="img-fluid" src="images/car/11.png" alt="">
       </div>
     </div>
-    <div class="row">
+    {{-- <div class="row">
       <div class="col-lg-3 col-sm-6">
         <div class="feature-box-3">
           <div class="icon">
@@ -388,7 +398,7 @@ custom-block -->
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
   </div>
 </section>
 

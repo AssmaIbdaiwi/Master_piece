@@ -175,6 +175,14 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+   /*
+     * Package Service Providers...
+     */
+    // Laravel\Socialite\SocialiteServiceProvider::class,
+
+UxWeb\SweetAlert\SweetAlertServiceProvider::class,
+
+    	// UxWeb\SweetAlert\SweetAlertServiceProvider::class,
     ],
 
     /*
@@ -229,7 +237,14 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        //   'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+       'Alert' => UxWeb\SweetAlert\SweetAlert::class,
+    // ‘Alert’ => UxWeb\SweetAlert\SweetAlert::class,
 
+       'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+       
     ],
+
+
 
 ];

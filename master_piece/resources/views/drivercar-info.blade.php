@@ -27,7 +27,7 @@
 						href="#account-general">General</a>
 					<a class="list-group-item list-group-item-action" data-toggle="list"
 					    href="/profile">Profile informations</a>
-			
+			<a class="list-group-item list-group-item-action" data-toggle="list" href="/review">Add Review</a>
 					<a class="list-group-item list-group-item-action" data-toggle="list"
 						href="/drivercar-info">Car informations</a>
 					<a class="list-group-item list-group-item-action" data-toggle="list"

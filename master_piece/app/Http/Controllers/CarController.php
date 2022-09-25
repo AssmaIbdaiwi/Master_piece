@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\User;
-
+// use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Support\Facades\Auth;
 use App\Models\RegDriver;
 use Illuminate\Http\Request;
@@ -109,9 +109,10 @@ RegDriver::where('user_driver_id',Auth::user()->id)->update([
  ]);
 
 
+//   Alert::success('Congrats', 'You\'ve Successfully Registered');
+return redirect()->route('drivercar-info.index') 
+->with ('Sweet Alert with success.','User Has Been updated successfully');
 
-return redirect()->route('drivercar-info.index')
-->with('success','User Has Been updated successfully');
 
 }
 

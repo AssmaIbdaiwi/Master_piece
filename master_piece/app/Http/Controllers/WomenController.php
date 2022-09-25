@@ -13,16 +13,16 @@ class WomenController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
     //    $search = $request->input('search');
 
  // Search in the title and body columns from the posts table
- $car= RegDriver::join('trips','trips.trip_driver_id','=','reg_drivers.user_driver_id')
-//  ->where('trips.location_from', 'LIKE', '%' . $request-> location_from . '%')
-//  ->where('trips.location_to', 'LIKE', '%' . $request-> location_to . '%')
-//   ->where('trips.passengers_numbers', 'LIKE','%' . $request-> passengers_numbers . '%')
-//    ->where('trips.booking_luggages', 'LIKE', '%' . $request-> booking_luggages . '%')
+ $car= RegDriver::join('trips','trips.trip_driver_id','=','reg_drivers.user_driver_id')->where('reg_drivers.gender','=','female')
+ ->where('trips.location_from', 'LIKE', '%' . $request-> location_from . '%')
+ ->where('trips.location_to', 'LIKE', '%' . $request-> location_to . '%')
+  ->where('trips.passengers_numbers', 'LIKE','%' . $request-> passengers_numbers . '%')
+   ->where('trips.booking_luggages', 'LIKE', '%' . $request-> booking_luggages . '%')
 
  ->get();
 //  dd($car);

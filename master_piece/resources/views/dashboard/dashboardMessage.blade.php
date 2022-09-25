@@ -6,7 +6,7 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> Car Table </h3>
+              <h3 class="page-title"> Messages Table </h3>
     
             </div>
             <div class="row">
@@ -28,7 +28,7 @@
                             <th> Email </th>
                              <th> Message </th>
                   
-                             <th> Car action</th>
+                             <th> Message action</th>
                           </tr>
                         </thead>
                         <tbody>

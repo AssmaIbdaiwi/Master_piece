@@ -27,9 +27,10 @@
                             <th> User name </th>
                             <th> User image </th>
                              <th> User email </th>
-                            <th> User password </th>
+                            {{-- <th> User password </th> --}}
                             <th> User mobile </th>
                             <th> User address </th>
+                            <th> User role</th>
                              <th> User action</th>
                           </tr>
                         </thead>
@@ -47,9 +48,14 @@
                              <img src="{{asset('upload/'.$item->image )}}" alt="">
                             </td>
                             <td> {{$item->email}} </td>
-                            <td>{{$item->password}} </td>
+                            {{-- <td>{{$item->password}} </td> --}}
                             <td>{{$item->mobile}} </td>
+
                             <td>{{$item->address}} </td>
+                       @if($item->rule == 0)  
+                          <td>Pending</td>
+                       @else <td>Driver</td>
+@endif
                             <td> 
                                <form action=" {{ route('dashboardUser.destroy',$item->id) }}" method="POST"> 
                              <a href="{{route('dashboardUser.edit',$item->id) }}" class="btn btn-secondary"> Edit</a> 
@@ -71,6 +77,7 @@
             </div>
           </div>
           <!-- content-wrapper ends -->
-
+</div>
+  </div>
 
 @endsection

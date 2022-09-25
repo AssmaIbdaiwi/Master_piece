@@ -40,7 +40,7 @@
    
         <form class="form-card"  method="POST"  action="{{route('driver-register.store')}}" enctype="multipart/form-data">
      @csrf
-                        
+   @include('sweetalert::alert')                 
     <div class="row justify-content-center">
        <div class="col-lg-8 col-md-12">
         <div class="gray-form">
@@ -81,35 +81,35 @@
             </div>
 
             <div class="mb-3">
-             <label class="form-label">ID card * (pdf)</label>
+             <label class="form-label">ID card * (Image)</label>
                <input  class="form-control" type="file" name="id_card">
             </div>
 
 <hr>
 <h5><br>Car Information</h5>
             <div class="mb-3">
-             <label class="form-label">Car License * (pdf)</label>
+             <label class="form-label">Car License * (Image)</label>
                <input class="form-control" type="file" name="license">
             </div>   
                        <div class="mb-3">
-             <label class="form-label">Car Image* (pdf)</label>
+             <label class="form-label">Car Image* (Image)</label>
                <input class="form-control" type="file" name="car_image">
             </div>    
                                     <div class="mb-3">
              <label class="form-label">Car model</label>
-               <input class="form-control" type="text" placeholder="Enter your address" name="car_model">
+               <input class="form-control" type="text" placeholder="Enter your Car model" name="car_model">
             </div>
                                     <div class="mb-3">
              <label class="form-label">Car number</label>
-               <input class="form-control" type="text" placeholder="Enter your address" name="car_number">
+               <input class="form-control" type="text" placeholder="Enter your Car number" name="car_number">
             </div>
                                     <div class="mb-3">
              <label class="form-label">Car color</label>
-               <input class="form-control" type="text" placeholder="Enter your address" name="car_color">
+               <input class="form-control" type="text" placeholder="Enter your Car color" name="car_color">
             </div>
                                     <div class="mb-3">
              <label class="form-label">Car description</label>
-               <input class="form-control" type="text" placeholder="Enter your address" name="car_description">
+               <input class="form-control" type="text" placeholder="Enter your Car description" name="car_description">
             </div>
                  <div class="mb-3">
                   <div class="remember-checkbox">
@@ -120,7 +120,7 @@
                    <div class="col-md-12">
                  <button id="submit" name="submit" type="submit" value="Send" class="button red">Register <i class="fa fa-spinner fa-spin fa-fw btn-loader" style="display: none;"></i></button>
                </div>
-                  
+ 
                </div>
            </div>
        </div>

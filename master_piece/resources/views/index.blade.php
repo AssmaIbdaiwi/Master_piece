@@ -15,9 +15,11 @@
                             <div class="p-3" style="max-width: 700px;margin-top:-120% ">
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Wasselny</h6>
                                 <h1 class="display-3 text-white mb-4 animated slideInDown">your safe destination</h1>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" style="background-color:#104f94; border-color:#104f94 ">Book now</a>
-                         
-                      
+                             @if(!Auth::check()) 
+                               <a href="{{url('login')}}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" style="background-color:#104f94; border-color:#104f94 ">Book now</a>
+                         @else
+                      <a href="/cars" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                                                      style="background-color:#104f94; border-color:#104f94 ">Book now</a>@endif
                             </div>
                         </div>
                     </div>
@@ -27,7 +29,7 @@
                             <div  class="p-3" style="max-width: 700px;margin-top:-100% " >
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Wasselny</h6>
                                 <h1 class="display-3 text-white mb-4 animated slideInDown">your safe destination</h1>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" style="background-color:#104f94; border-color:#104f94 ">Book now  </a>
+                                <a href="/cars" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" style="background-color:#104f94; border-color:#104f94 ">Book now  </a>
        
                               </div>
                         </div>
@@ -58,18 +60,20 @@
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="border rounded p-1">
                                     <div class="border rounded text-center p-4">
-                                        <i class="fa fa-hotel fa-2x text mb-2" style="color:#ffd322"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="mb-0">Rooms</p>
+                                        {{-- <i class="fa fa-hotel fa-2x text mb-2" style="color:#ffd322"></i> --}}
+                                        <iconify-icon icon="bx:trip" width="30" height="30" style="color:#ffd322"></iconify-icon>
+                                        <h2 class="mb-1" data-toggle="counter-up">1254</h2>
+                                        <p class="mb-0">Trips</p>
                                     </div>
                                 </div>
                             </div>
                                                         <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="border rounded p-1">
                                     <div class="border rounded text-center p-4">
-                                        <i class="fa fa-hotel fa-2x text mb-2" style="color:#ffd322"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="mb-0">Rooms</p>
+                                        {{-- <i class="fa fa-hotel fa-2x text mb-2" style="color:#ffd322"></i> --}}
+                                        <iconify-icon icon="healthicons:truck-driver" width="30" height="30" style="color:#ffd322"></iconify-icon>
+                                        <h2 class="mb-1" data-toggle="counter-up">472</h2>
+                                        <p class="mb-0">Drivers</p>
                                     </div>
                                 </div>
                             </div>
@@ -77,13 +81,13 @@
                                 <div class="border rounded p-1">
                                     <div class="border rounded text-center p-4">
                                         <i class="fa fa-users fa-2x text mb-2" style="color:#ffd322"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                        <h2 class="mb-1" data-toggle="counter-up">615</h2>
                                         <p class="mb-0">Clients</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Explore More</a>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="/about">Explore More</a>
                     </div>
                     <div class="col-lg-6">
                         <div class="row g-3">
@@ -120,7 +124,7 @@
                  <h1 class="mb-4">For your</span></h1>
                     <h1 class="mb-4">  <span class="text text-uppercase" style="color:#ffd322"> convenience.</span></h1></center>   
                     <p class="mb-4">Wasselny provides  for women, woman driver for just women passengers.</p>
-                   <center><a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a></center> 
+                   <center><a class="btn btn-primary py-3 px-5 mt-2" href="/about">Read More</a></center> 
                 </div>
                
               </div>
@@ -153,7 +157,7 @@
               <strong class="text-red">Wasselny </strong>
 
               <span>start earn with us </span>
-              <a class="btn btn-sm rounded py-2 px-4" href="{{('contact')}}"
+              <a class="btn btn-sm rounded py-2 px-4" href="{{('partner')}}"
                 style="background-color:#ffd322; border-color:#ffd322 ;color:#104f94">Contact us</a>
             </div>
           </div>
@@ -263,36 +267,39 @@
         </div>
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-12">
-        <div class="owl-carousel owl-theme" data-nav-dots="true" data-items="1" data-md-items="1" data-sm-items="1"
-          data-xs-items="1" data-space="15">
+     
+        <div class="owl-carousel owl-theme" data-nav-dots="true" data-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1" data-space="15">
+         @foreach ($review as $reviews)
           <div class="item">
             <div class="testimonial-block">
+              
               <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-3">
                   <div class="testimonial-avtar">
-                    <img class="img-fluid center-block" src="images/team/01.jpg" alt="">
+                    <img class="img-fluid center-block" src="{{asset('upload/'.$reviews->image )}}" alt="">
                   </div>
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-9">
                   <div class="testimonial-content">
-                    <p><i class="fa fa-quote-left"></i> <span>You will begin to realize why this exercise is called the
-                        Dickens Pattern (with reference to the ghost showing Scrooge some different futures) as you
-                        notice that the idea of this exercise is to hypnotize yourself to be aware of two very real
-                        possibilities for your future. Two distinct pathways that you could take for your life this very
-                        day.</span> <i class="fa fa-quote-right float-end"></i></p>
+                    <p><i class="fa fa-quote-left"></i> <span>{{$reviews->msg_feedback}}</span> <i class="fa fa-quote-right float-end"></i></p>
                   </div>
                   <div class="testimonial-info">
-                    <h6>John Doe</h6>
+                    <h6>{{ $reviews->name }}</h6>
                   </div>
                 </div>
               </div>
+          
             </div>
           </div>
+          @endforeach
         </div>
+     
       </div>
     </div>
+
   </div>
 </section>
 

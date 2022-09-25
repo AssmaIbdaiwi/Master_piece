@@ -2,6 +2,8 @@
 use App\Http\Controllers\DashboardCarController;
 use App\Http\Controllers\DashboardUserController;
 use App\Http\Controllers\DashboardMessageController;
+use App\Http\Controllers\DashboardTripController;
+use App\Http\Controllers\DashboardfeedbackController;
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CarController;
@@ -14,6 +16,13 @@ use App\Http\Controllers\TripAddController;
 use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\WomenController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\GoogleController;
+use App\Http\Controllers\FaceBookController;
+
+
+use App\Http\Controllers\Auth\GoogleSocialiteController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -55,13 +64,16 @@ Route::get('/dashboard', function () {
 
 
 
-
+Route::middleware('auth')->group(function() {
 Route::resource('profile',ProfileController::class);
-
+});
+Route::middleware('auth')->group(function() {
+    
 Route::resource('cars',CarListController::class);
-
+});
+Route::middleware('auth')->group(function() {
 Route::resource('woman',WomenController::class);
-
+});
 Route::resource('drivercar-info',CarController::class);
 
 Route::resource('contact',ContactController::class);
@@ -74,11 +86,17 @@ Route::resource('driver-register', RegDriverController::class);
 });
 Route::resource('tripadd', TripAddController::class);
 
+Route::resource('/', IndexController::class);
+
+Route::resource('review', ReviewController::class);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
+
+ 
+ 
 
 
 
@@ -88,5 +106,19 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('dashboardCar',DashboardCarController::class);
 Route::resource('dashboardUser',DashboardUserController::class);
 Route::resource('dashboardMessage',DashboardMessageController::class);
+Route::resource('dashboardtrip',DashboardTripController::class);
+Route::resource('dashboardFeedback',DashboardfeedbackController::class);
 
+////google
 
+Route::prefix('google')->name('google.')->group( function(){
+    Route::get('login', [GoogleController::class, 'loginWithGoogle'])->name('login');
+    Route::any('callback', [GoogleController::class, 'callbackFromGoogle'])->name('callback');
+});
+
+////facebook
+
+Route::prefix('facebook')->name('facebook.')->group( function(){
+    Route::get('auth', [FaceBookController::class, 'loginUsingFacebook'])->name('login');
+    Route::get('callback', [FaceBookController::class, 'callbackFromFacebook'])->name('callback');
+});

@@ -34,7 +34,12 @@
 <!-- responsive -->
 <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
+<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
 
+{{-- //// --}}
+{{-- <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0"
+    nonce="Op100CJo"></script> --}}
 {{-- //////////// --}}
 <div class="container">
     <div class="row justify-content-center">
@@ -45,7 +50,23 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
+<div class="row mb-2">
+        <div class="col-md-8 offset-md-4">
+            <a href="{{ route('google.login') }}" class="btn btn-danger">
+                <iconify-icon inline icon="akar-icons:google-contained-fill" style="color: white;" width="20" height="20">
+                </iconify-icon> Login with Google
+            </a>
+            <a href="{{ route('facebook.login') }}" class="btn btn-primary">
+                          <iconify-icon inline icon="akar-icons:facebook-fill" style="color: white;" width="20" height="20"></iconify-icon> Login with Facebook
+                        </a>
+        </div>
+    </div>
+{{-- //// --}}
+    {{-- <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default"
+        data-auto-logout-link="false" data-use-continue-as="false"></div> --}}
 
+
+        {{-- /// --}}
                         <div class="row mb-3">
                             <label for="email" style="color:white" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
 
@@ -86,7 +107,7 @@
                             </div>
                         </div>
 
-                        <div class="row mb-0">
+                        <div class="row mb-3">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
@@ -99,7 +120,13 @@
                                 @endif
                             </div>
                         </div>
+                   
                     </form>
+                    
+
+
+
+
                 </div>
             </div>
         </div>

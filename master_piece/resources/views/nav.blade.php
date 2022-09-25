@@ -9,7 +9,7 @@
 <meta name="description" content="Car Dealer - The Best Car Dealer Automotive Responsive HTML5 Template" />
 <meta name="author" content="potenzaglobalsolutions.com" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<title>Car Dealer - The Best Car Dealer Automotive Responsive HTML5 Template</title>
+<title>Wasselny</title>
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="images/favicon.ico" />
@@ -87,32 +87,6 @@
 <!--=================================
  header -->
 
-{{-- 
-<div class="topbar">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-md-12">
-				<div class="topbar-left text-lg-start text-center">
-				   <ul class="list-inline">
-             <li> <i class="fa fa-envelope-o"> </i> support@website.com</li>
-             <li> <i class="fa fa-clock-o"></i> Mon - Sat 8.00 - 18.00. Sunday CLOSED</li>
-           </ul>
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-12">
-				<div class="topbar-right text-lg-end text-center">
-					 <ul class="list-inline">
-             <li> <i class="fa fa-phone"></i> (007) 123 456 7890</li>
-             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-             <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-           </ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> --}}
 
 <!--=================================
  mega menu -->
@@ -138,40 +112,29 @@
             <li><a href="#">Services <i class="fa fa-angle-down fa-indicator"></i></a>
                 <!-- drop down multilevel  -->
                 <ul class="drop-down-multilevel">
-                    <li><a href="/cars">cars</a> </li>
+                    <li><a href="/cars">Trips</a> </li>
+                    <li><a href="/woman">Women drivers trips</a> </li>
                     <li><a href="/driver-register">Registration as Driver</a>    </li>
                     <li><a href="/partner">Become a Partner</a> </li>
                       </ul>
                     
-            {{-- <li><a href="javascript:void(0)">Car listing  <i class="fa fa-angle-down fa-indicator"></i></a>
-               <!-- drop down multilevel  -->
-                <ul class="drop-down-multilevel">
-                    <li><a href="listing-01.html">listing 01</a></li>
-                    <li><a href="listing-02.html">listing 02</a></li>
-                </ul>
-            </li>
-            <li><a href="javascript:void(0)">Car details  <i class="fa fa-angle-down fa-indicator"></i></a>
-               <!-- drop down multilevel  -->
-                <ul class="drop-down-multilevel">
-                    <li><a href="details-01.html">details 01</a></li>
-                    <li><a href="details-02.html">details 02</a></li>
-                </ul>
-            </li> --}}
+
              <li><a href="/about">About us </a> </li>
-            <li><a href="/contact"> Contact </a>
+            <li><a href="/contact"> Contact </a>  </li>
+           @if(!Auth::check())   <li><a href="{{url('login')}}"> Login/Signup </a> </li>
 
-               
-            </li>
-
-  <li>
+          @else  <li>
             <a class="nav-link dropdown-toggle" id="navbarDropdown">
              Profile
             </a>
                <ul class="drop-down-multilevel">
               
-              @if(!Auth::check()) <li> <a class="dropdown-item" href="{{url('login')}}"> 
-                Login/Signup </a> </li>
-                @else <li><a class="dropdown-item" href="{{url('profile')}}">Hello {{ Auth::user()->name }}!</a> </li> @endif
+              {{-- @if(!Auth::check())  --}}
+              {{-- <li> <a class="dropdown-item" href="{{url('login')}}">  --}}
+                {{-- Login/Signup </a> </li> --}}
+                {{-- @else --}}
+                 <li><a class="dropdown-item" href="{{url('profile')}}">Hello {{ Auth::user()->name }}!</a> </li>
+                 @endif
 
               
               @if(!Auth::check())
